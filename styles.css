@@ -8,14 +8,75 @@
 
 html {
 	height:100%;
+	width:100%;
 	font-size:62.5%;
 }
 
 body {
 	height:100%;
+	width:100%;
 	font-size:1.6rem;
+	background-color:#444444;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	padding:2rem 0;
+	font-family: "Comfortaa", sans-serif;
 }
 
 #page-Container {
+	display: flex;
+	flex-direction:column;
+	background-color:rgb(200,200,200, .9);
+	width:80%;
+	height:80%;
+	justify-content:space-between;
+	align-items:center;
+	padding: 2rem 0 0 0;
+}
+
+h2 {
+	text-transform: uppercase;
+}
+
+.displayList {
+	width:80%;
+	background-color:white;
+	margin:0 0 4rem 0;
+	border-radius:.5rem;
+}
+
+h3 {
+	padding:.5rem;
+	text-align: center;	
+}
+
+	.toDoItem {
+		background-color:rgb(230,230,230, .9);
+		display:flex;
+	}
 	
+		.toDo {
+			flex:1;
+			padding: 1rem 1rem 1rem 1rem;
+		}
+	
+		.toDoItemTask {
+			background-color:rgb(210,210,210, .9);
+			color:rgb(20, 140, 50, 1);
+			font-weight:bolder;
+			flex:3;
+			
+		}
+		
+		.toDoItemAction {
+			color:rgb(250, 140, 50, 1);
+		}
+
+.input-Section {
+	height: 3rem;
+	width:80%;
+	background-color:white;
+	margin:0 0 4rem 0;
+	border-radius:.5rem;
 }
