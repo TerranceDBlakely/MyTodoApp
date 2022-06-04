@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Roboto+Slab:wght@300;400;900&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Roboto+Slab:wght@300;400;900&display=swap');
+	
+/* GLOBALS --------------------*/
 
 *{
 	box-sizing: border-box;
@@ -16,7 +18,7 @@ body {
 	height:100%;
 	width:100%;
 	font-size:1.6rem;
-	background-color:#444444;
+	background-color:#222222;
 	display: flex;
 	justify-content:center;
 	align-items:center;
@@ -24,59 +26,130 @@ body {
 	font-family: "Comfortaa", sans-serif;
 }
 
-#page-Container {
+/* TODO CONTAINER --------------------*/
+
+#TODO-Container {
 	display: flex;
 	flex-direction:column;
-	background-color:rgb(200,200,200, .9);
-	width:80%;
-	height:80%;
-	justify-content:space-between;
+	background-color:rgb(70,70,70, .7);
+	width:100%;
 	align-items:center;
-	padding: 2rem 0 0 0;
+	padding: 2rem 2rem;
+	border-radius: 1rem;
 }
 
-h2 {
-	text-transform: uppercase;
-}
+	.section {
+		width:100%;
+	}
 
-.displayList {
-	width:80%;
-	background-color:white;
-	margin:0 0 4rem 0;
-	border-radius:.5rem;
-}
+	.header {
+		padding:2rem 0;
+		text-align: center;
+		width:100%;
+		background-color:rgb(100,100, 100, .9);
+		border-top-right-radius: 1rem;
+		border-top-left-radius: 1rem;
+	}
 
-h3 {
-	padding:.5rem;
-	text-align: center;	
-}
+		/* PAGE CONTAINER - TITLE */
+		
+		h2 {
+			text-transform: uppercase;
+			font-size:2rem;
+			color:rgb(160,160,160, .9);
+		}
 
-	.toDoItem {
-		background-color:rgb(230,230,230, .9);
+		
+	/* TASK LIST WINDOW SECTION --------------------*/
+	
+		/* TASK LIST WINDOW - TITLE */
+		
+		h3 {
+			text-align: left;	
+			color:rgb(160,160,160, .9);
+			margin:1rem 0 3rem 0;
+			font-weight:bolder;
+			font-size:1.5rem;
+			text-transform: uppercase;
+		}	
+		
+		/* TODO ITEM SECTION WINDOW */
+	
+		.displayTaskList-Window {
+			margin:0 0 0 0;
+			border-radius:.5rem;
+			background-color: rgb(30, 30, 30, .5);
+			padding:1rem 2rem 3rem 2rem;
+			/*display:flex;*/
+		}	
+	
+			/* TODO ITEM SECTION */
+		
+			.toDoItemsTask-Container {
+				background-color:rgb(250,250,250, .9);
+				display:flex;
+				padding:1rem 1rem;
+				border-radius:.5rem;
+			}		
+			
+				/* INPUT TASK ELEMENTS */
+			
+				.toDoItem-els {
+					display:flex;
+					align-items:center;
+					text-align: center;
+					flex:1;
+				}
+				
+					/* TODO ITEM TASK */
+				
+					.toDoItemTask {
+						color:rgb(20, 140, 50, 1);
+						font-weight:bolder;
+						flex:4;
+						border-right: solid .2rem rgb(150, 150, 150, .5);
+					}
+					
+					/* TODO ITEM BUTTONS */
+					
+					.toDoItemAction-Btn {
+						padding-left:1rem;
+						color:rgb(250, 140, 50, 1);
+					}
+		
+	/*INPUT SECTION --------------------*/
+	
+	.inputTask-Section {
+		padding:1rem 2rem 1rem 2rem;
+		background-color:rgb(190, 190, 190, 1);
+		margin:0;
+		border-radius:.5rem;
 		display:flex;
+		align-items:center;
 	}
 	
-		.toDo {
+		/* INPUT TASK ELEMENTS */
+	
+		.inputTask-els {
 			flex:1;
-			padding: 1rem 1rem 1rem 1rem;
 		}
 	
-		.toDoItemTask {
-			background-color:rgb(210,210,210, .9);
-			color:rgb(20, 140, 50, 1);
-			font-weight:bolder;
-			flex:3;
+			/* INPUT TASK FIELD */
 			
-		}
-		
-		.toDoItemAction {
-			color:rgb(250, 140, 50, 1);
-		}
-
-.input-Section {
-	height: 3rem;
-	width:80%;
-	background-color:white;
-	margin:0 0 4rem 0;
-	border-radius:.5rem;
-}
+			.inputTaskBar {
+				padding:1rem;	
+				background-color: rgb(250, 250, 250, 1);
+				margin-right:1rem;
+				border:0;
+			}
+			
+			/* INPUT TASK BUTTONS */
+			
+			.inputTask-Btn {
+				background-color: rgb(10, 10, 10, .8);
+				border-radius:1rem;
+				border:0;
+				color:white;
+				font-size:1.5rem;
+				padding:1rem;
+			}
