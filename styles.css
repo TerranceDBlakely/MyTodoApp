@@ -18,28 +18,26 @@ body {
 	height:100%;
 	width:100%;
 	font-size:1.6rem;
-	background-color:#222222;
 	display: flex;
 	justify-content:center;
 	align-items:center;
 	padding:2rem 0;
 	font-family: "Comfortaa", sans-serif;
+	display:flex;
+	flex-direction:column;	
 }
 
 /* TODO CONTAINER --------------------*/
 
-/*@media (max-width:480px) {
-		#TODO-Container {
-			width:100%;	
-		}
+
 	
-}*/
+}
 #TODO-Container {
 	display: flex;
 	flex-direction:column;
-	background-color:rgb(70,70,70, .7);
-	width:30vw;
+	/*width:30vw;*/
 	align-items:center;
+	margin:0 2rem;
 	padding: 4rem 2rem;
 	border-radius: 1rem;
 }
@@ -52,7 +50,6 @@ body {
 		padding:2rem 0;
 		text-align: center;
 		width:100%;
-		background-color:rgb(100,100, 100, .9);
 		border-top-right-radius: 1rem;
 		border-top-left-radius: 1rem;
 	}
@@ -63,6 +60,7 @@ body {
 			text-transform: uppercase;
 			font-size:2rem;
 			color:rgb(160,160,160, .9);
+			padding: 0 2rem;
 		}
 
 		
@@ -84,89 +82,81 @@ body {
 		.displayTaskList-Window {
 			margin:0 0 0 0;
 			border-radius:.5rem;
-			background-color: rgb(30, 30, 30, .5);
 			padding:1rem 2rem 3rem 2rem;
 			display:flex;
 			flex-direction:column;
 		}	
-	
-			/* TODO ITEM SECTION */
 		
-			.toDoItemsTask-Container {
-				background-color:rgb(250,250,250, .9);
+		/* TODO ITEM TASK LIST CONTAINER */
+		 
+		.taskListContainer {
+			padding:1rem;
+		}
+		
+			.todoItem {
 				display:flex;
-				padding:1rem 1rem;
-				border-radius:.5rem;
-				margin: .5rem 0;
-			}		
+				list-style:none;
+				justify-content:space-between;
+				background-color: rgb(250,250,250, .8);
+			}
 			
-				/* INPUT TASK ELEMENTS */
+				.todoItem:hover {
+					font-weight: bolder;
+				}
 			
-				.toDoItem-els {
-					flex:1;
+			.todoItemTitle {
+				padding: 1rem 2rem;
+				border-right: solid 1px rgb(230,230,230, 1);
+			}
+			
+			.todoItemButton {
+				padding: 1rem 2rem;
+				border-top-right-radius:1rem;
+				border-bottom-right-radius:1rem;
+				
+			}
+			
+				.todoItemButton img {
+					width: 100%;
+					
 				}
 				
-					/* TODO ITEM TASK */
-				
-					.toDoItemTask {
-						color:rgb(20, 140, 50, 1);
-						font-weight:bolder;
-						flex:4;
-						border-right: solid .2rem rgb(150, 150, 150, .2);
-					}
+				.todoItemButton:hover {
+					background-color: rgb(230,230,230, 1);
 					
-					/* TODO ITEM BUTTONS */
-					
-					.toDoItemAction-Btn {
-						text-align: center;
-						color:rgb(250, 140, 50, 1);
-					}
+				}
+	
+		.link a, .link {
+			text-align: center;
+			font-size:.5rem;
+			color:rgb(150,150,150, .3)
+		}
 		
 	/*INPUT SECTION --------------------*/
-	
-	.inputTask-Section {
-		padding:1rem 2rem 1rem 2rem;
-		background-color:rgb(190, 190, 190, 1);
-		margin:0;
-		border-radius:.5rem;
+	.inputSection {
+		background-color:rgb(230,230,230, .5);
+		padding:1rem;
+		margin-top:1rem;
 		display:flex;
-		align-items:center;
+		justify-content:space-between;
 	}
-	
-		/* INPUT TASK ELEMENTS */
-	
-		.inputTask-els {
+		.inputSectionEl {
 			flex:1;
 		}
-	
-			/* INPUT TASK FIELD */
+		
+		.inputTaskField {
+			background-color:rgb(255,255,255, 1);
+			border:0;	
+			height:2rem;
 			
-			.inputTaskBar {
-				padding:1rem;	
-				background-color: rgb(250, 250, 250, 1);
-				margin-right:1rem;
-				border:0;
-				flex:4;
-			}
+		}
+		
+		.inputTaskButton {
+			padding:0 1rem;
+		}
 			
-			.inputTask-Section input:focus {
-				outline:0;
-				border-color:lightblue;
-			}
-			
-			/* INPUT TASK BUTTONS */
-			
-			.inputTask-Btn {
-				background-color: rgb(10, 10, 10, .8);
-				border-radius:1rem;
-				border:0;
-				color:white;
-				font-size:1.5rem;
-				padding:1rem;
-				cursor: pointer;
-				text-align: center;
-			}
-			
-			.inputTask-Btn:hover {
-				background-color:rgb(50, 50, 50, .9);
-			}
+@media (min-width:320px) and (max-width:480px) {
+	#TODO-Container {
+		width:100%;	
+		margin: 0 2rem;
+	}

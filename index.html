@@ -17,37 +17,37 @@
 		</section>
 		
 		<!-- TASK LIST WINDOW  -->
-		<section class="displayTaskList-Window section">
+		<section id="taskListWindow" class="displayTaskList-Window section">
 			<h3>Today's Task: </h3>
 			
 			<!-- TODO ITEM SECTION  -->
+			<!-- There is nothing uglier than an old infant -->
 			
-			<div class="toDoItemsTask-Container">
-
-				<!-- TODO ITEM TASK  -->
-				<div class="toDoItemTask toDoItem-els">
-					Task 1
-				</div>
+			<!-- TODO ITEM TASKLIST CONTAINER -->
+			<ul class="taskListContainer">
 				
-				<!-- TODO ITEM BUTTONS -->
-				<div class="toDoItemAction-Btn toDoItem-els">Add</div>
-				
-			</div>
+				<!-- TODO ITEM TASK -->
+				<li class="todoItem">
+					<p class="todoItemTitle todoItemEl">Title</p>
+					<p class="todoItemButton todoItemEl">
+						<img src="./images/delete.svg" alt="" />
+					</p>
+				</li>
+			</ul>
+			
+			<!-- TODO ITEM TASK INPUT SECTION -->
+			
+			<section class="inputSection">
+				<input type="text" class="inputTaskField inputSectionEl" />
+				<div class="inputTaskButton inputSectionEl">Enter</div>
+			</section>
 			
 		</section>
 		
-		
-		<!-- INPUT TASK SECTION  -->
-		<section class="inputTask-Section section">
-			
-			<!-- INPUT TASK FIELD -->
-			<input type="text" class="inputTaskBar inputTask-els" id="inputTask"/>
-			
-			<!-- INPUT TASK BUTTON -->
-			<button class="inputTask-Btn inputTask-els" value="Enter" id="push">Enter</button>
-			
-		</section>
-		
+	</div>
+	<div class="link">
+		<p>TerranceBlakely copyright &copy 2022</p>
+		<a target="_blank" href="https://icons8.com/icon/11206/minus">Minus</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 	</div>
 	<script src="script.js"></script>
 </body>
